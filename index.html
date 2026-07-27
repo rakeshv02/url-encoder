@@ -1,36 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>URL Encoder & Decoder — Free Online Tool | Tabutility</title>
-    <meta name="description" content="Free URL encoder and decoder. Encode and decode URLs instantly. Convert special characters to URL-safe format for APIs, query strings, and web development. No sign-up." />
-    <meta name="keywords" content="url encoder, url decoder, encode url, decode url, url encoding, percent encoding, url converter online" />
-    <link rel="canonical" href="https://url-encoder.tabutility.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://url-encoder.tabutility.com/" />
-    <meta property="og:title" content="URL Encoder & Decoder — Free Online Tool" />
-    <meta property="og:description" content="Encode and decode URLs instantly. Free, no sign-up." />
-    <meta property="og:site_name" content="Tabutility" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="URL Encoder & Decoder — Free Online Tool" />
-    <meta name="twitter:description" content="Encode and decode URLs instantly. Free, no sign-up." />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔗</text></svg>" />
-    <meta name="robots" content="index, follow" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-78VZWJ5B1W');
-    </script>
-    <script type="application/ld+json">
-    { "@context": "https://schema.org", "@type": "WebApplication", "name": "URL Encoder", "url": "https://url-encoder.tabutility.com", "description": "Free online URL encoder and decoder. Convert special characters to URL-safe format instantly.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }, "provider": { "@type": "Organization", "name": "Tabutility", "url": "https://tabutility.com" } }
-    </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>URL Encoder / Decoder — Tabutility</title>
+<meta name="description" content="Free URL encoder and decoder. Encode or decode URLs and query string parameters instantly."/>
+<meta name="keywords" content="url encoder, url decoder, encode url, decode url, urlencode online, percent encoding"/>
+<link rel="canonical" href="https://url-encoder.tabutility.com/"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔗</text></svg>"/>
+<meta property="og:title" content="URL Encoder / Decoder"/>
+<meta property="og:description" content="Free URL encoder and decoder. Encode or decode URLs and query parameters instantly."/>
+<meta property="og:url" content="https://url-encoder.tabutility.com/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Tabutility"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="URL Encoder / Decoder"/>
+<meta name="twitter:description" content="Free URL encoder and decoder. Encode or decode URLs and query parameters instantly."/>
+<meta name="robots" content="index, follow"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-78VZWJ5B1W');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"URL Encoder / Decoder","url":"https://url-encoder.tabutility.com/","description":"Free URL encoder and decoder. Encode or decode URLs and query string parameters instantly.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Tabutility","url":"https://tabutility.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tabutility","item":"https://tabutility.com"},{"@type":"ListItem","position":2,"name":"Developer Tools","item":"https://tabutility.com"},{"@type":"ListItem","position":3,"name":"URL Encoder / Decoder","item":"https://url-encoder.tabutility.com/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is URL encoding?","acceptedAnswer":{"@type":"Answer","text":"URL encoding converts special characters into a format that can be safely transmitted in a URL, replacing them with % followed by hex codes."}},{"@type":"Question","name":"Does my data get saved?","acceptedAnswer":{"@type":"Answer","text":"No — all processing is done locally in your browser."}},{"@type":"Question","name":"Is the URL Encoder free?","acceptedAnswer":{"@type":"Answer","text":"Yes — completely free, no sign-up needed."}},{"@type":"Question","name":"Difference between encodeURI and encodeURIComponent?","acceptedAnswer":{"@type":"Answer","text":"encodeURI preserves valid URL characters like / and :, while encodeURIComponent encodes everything except letters, digits and - _ . ~"}}]}</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f172a;color:#f1f5f9;min-height:100vh}
+nav{background:#1e293b;border-bottom:1px solid #334155;padding:14px 24px;display:flex;align-items:center;gap:16px}
+nav a{color:#94a3b8;text-decoration:none;font-size:14px}nav a:hover{color:#f1f5f9}
+nav .brand{color:#38bdf8;font-weight:700;font-size:18px}
+.ad-banner{background:#1e293b;border-bottom:1px solid #334155;padding:4px;text-align:center}
+#app{max-width:780px;margin:8px auto;padding:0 16px 40px}
+h1{font-size:clamp(20px,4vw,28px);font-weight:800;margin:24px 0 6px;color:#f1f5f9}
+.subtitle{color:#94a3b8;font-size:14px;margin-bottom:20px}
+.tabs{display:flex;gap:2px;background:#0f172a;border-radius:10px;padding:4px;margin-bottom:20px;border:1px solid #334155}
+.tab{flex:1;text-align:center;padding:10px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;color:#94a3b8;border:none;background:none;transition:all .2s}
+.tab.active{background:#38bdf8;color:#0f172a}
+.card{background:#1e293b;border:1px solid #334155;border-radius:14px;padding:24px;margin-bottom:20px}
+.pane-label{font-size:12px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px}
+textarea{width:100%;height:160px;background:#0f172a;border:1px solid #334155;border-radius:10px;color:#f1f5f9;font-family:monospace;font-size:14px;padding:14px;resize:vertical;outline:none;line-height:1.5;margin-bottom:10px}
+textarea:focus{border-color:#38bdf8}
+.output-box{width:100%;min-height:100px;background:#0f172a;border:1px solid #334155;border-radius:10px;font-family:monospace;font-size:14px;padding:14px;overflow-x:auto;line-height:1.5;white-space:pre-wrap;word-break:break-all;color:#38bdf8;margin-bottom:12px}
+.btn{display:inline-flex;align-items:center;gap:6px;background:#38bdf8;color:#0f172a;border:none;border-radius:8px;padding:9px 18px;font-size:13px;font-weight:700;cursor:pointer;transition:background .2s}
+.btn:hover{background:#7dd3fc}
+.btn-outline{background:transparent;border:1px solid #334155;color:#f1f5f9}
+.btn-outline:hover{background:#334155}
+.btn-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.mode-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.mode-btn{background:#0f172a;border:1px solid #334155;border-radius:8px;color:#94a3b8;padding:6px 14px;font-size:13px;cursor:pointer;transition:all .2s}
+.mode-btn.active{background:#334155;color:#f1f5f9;border-color:#475569}
+.char-count{font-size:12px;color:#475569;margin-left:auto}
+.divider{display:flex;align-items:center;text-align:center;color:#475569;font-size:12px;margin:14px 0}
+.divider::before,.divider::after{content:'';flex:1;border-bottom:1px solid #334155}
+.divider::before{margin-right:10px}.divider::after{margin-left:10px}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#22c55e;color:#fff;padding:10px 22px;border-radius:8px;font-size:14px;font-weight:600;opacity:0;transition:opacity .3s;pointer-events:none;z-index:999}
+.toast.show{opacity:1}
+</style>
+</head>
+<body>
+<nav><span class="brand">⚡ Tabutility</span><a href="https://tabutility.com">← All Tools</a></nav>
+<div class="ad-banner"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+<div id="app">
+  <h1>🔗 URL Encoder / Decoder</h1>
+  <p class="subtitle">Encode or decode URLs and query string parameters instantly. Live conversion as you type.</p>
+
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('encode',this)">Encode</button>
+    <button class="tab" onclick="switchTab('decode',this)">Decode</button>
+  </div>
+
+  <div class="card">
+    <!-- Mode selector -->
+    <div style="margin-bottom:14px">
+      <div class="pane-label" style="margin-bottom:8px">Encoding Mode</div>
+      <div class="mode-row" id="modeRow">
+        <button class="mode-btn active" onclick="setMode('component',this)">encodeURIComponent</button>
+        <button class="mode-btn" onclick="setMode('uri',this)">encodeURI</button>
+      </div>
+    </div>
+
+    <div class="pane-label" id="inputLabel">Input (plain text / URL)</div>
+    <textarea id="inputArea" placeholder="Type or paste here — output updates live..." oninput="process()"></textarea>
+
+    <div class="divider">Output</div>
+    <div class="output-box" id="outputBox"></div>
+
+    <div class="btn-row">
+      <button class="btn btn-outline" onclick="copyOutput()">📋 Copy Output</button>
+      <button class="btn btn-outline" onclick="swapIO()">⇅ Swap</button>
+      <button class="btn btn-outline" onclick="clearAll()">✕ Clear</button>
+      <span class="char-count" id="charCount"></span>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast">Copied!</div>
+
+<div style="max-width:780px;margin-left:auto;margin-right:auto;margin-top:24px;margin-bottom:8px;padding:0 16px">
+  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:20px 24px">
+    <h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px">Related Tools</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px">
+      <a href="https://base64-encoder.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Base64 Encoder / Decoder</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
+      <a href="https://json-formatter.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">JSON Formatter</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
+      <a href="https://uuid-generator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">UUID Generator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
+      <a href="https://password-generator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Password Generator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Developer Tools</div></a>
+    </div>
+  </div>
+</div>
+
+<div style="max-width:780px;margin-left:auto;margin-right:auto;margin-top:8px;margin-bottom:24px;padding:0 16px">
+  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:20px 24px">
+    <h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px">Frequently Asked Questions</h2>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">What is URL encoding?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">URL encoding converts special characters into a format that can be safely transmitted in a URL, replacing them with % followed by hex codes.</div>
+    </div>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Does my data get saved?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">No — all processing is done locally in your browser. Nothing is sent to any server.</div>
+    </div>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Is this free?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">Yes — completely free, no sign-up needed.</div>
+    </div>
+    <div style="padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Difference between encodeURI and encodeURIComponent?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">encodeURI preserves valid URL characters like / and :, while encodeURIComponent encodes everything except letters, digits and - _ . ~</div>
+    </div>
+  </div>
+</div>
+
+<div style="text-align:center;padding:8px">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+
+<script>
+let mode='encode';
+let encMode='component';
+
+function switchTab(t,el){
+  mode=t;
+  document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  const modeRow=document.getElementById('modeRow');
+  const inputLabel=document.getElementById('inputLabel');
+  if(t==='encode'){
+    modeRow.style.display='flex';
+    inputLabel.textContent='Input (plain text / URL)';
+    document.getElementById('inputArea').placeholder='Type or paste text to encode — output updates live...';
+  } else {
+    modeRow.style.display='none';
+    inputLabel.textContent='Input (URL-encoded string)';
+    document.getElementById('inputArea').placeholder='Paste encoded URL here — output updates live...';
+  }
+  process();
+}
+
+function setMode(m,el){
+  encMode=m;
+  document.querySelectorAll('.mode-btn').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  process();
+}
+
+function process(){
+  const input=document.getElementById('inputArea').value;
+  const out=document.getElementById('outputBox');
+  const cc=document.getElementById('charCount');
+  if(!input){out.textContent='';cc.textContent='';return;}
+  try{
+    let result;
+    if(mode==='encode'){
+      result=encMode==='component'?encodeURIComponent(input):encodeURI(input);
+    } else {
+      result=decodeURIComponent(input.replace(/\+/g,' '));
+    }
+    out.textContent=result;
+    cc.textContent=input.length+' in → '+result.length+' out';
+  }catch(e){
+    out.textContent='Error: '+e.message;
+  }
+}
+
+function copyOutput(){
+  const txt=document.getElementById('outputBox').textContent;
+  if(!txt||txt.startsWith('Error')) return;
+  navigator.clipboard.writeText(txt).then(()=>showToast());
+}
+
+function swapIO(){
+  const out=document.getElementById('outputBox').textContent;
+  if(!out||out.startsWith('Error')) return;
+  document.getElementById('inputArea').value=out;
+  process();
+}
+
+function clearAll(){
+  document.getElementById('inputArea').value='';
+  document.getElementById('outputBox').textContent='';
+  document.getElementById('charCount').textContent='';
+}
+
+function showToast(){
+  const t=document.getElementById('toast');
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),1800);
+}
+</script>
+</body>
 </html>
