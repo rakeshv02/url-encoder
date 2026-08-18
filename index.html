@@ -307,6 +307,106 @@ function showToast(){
 <div>Free, private, browser-based tools. No sign-up, no tracking.</div>
 <div style="margin-top:6px"><a href="https://tabutility.com" style="color:#818cf8;font-weight:600;text-decoration:none">All Tools</a> · <a href="https://tabutility.com/blog/" style="color:#94a3b8;text-decoration:none">Blog</a> · <a href="https://tabutility.com/about/" style="color:#94a3b8;text-decoration:none">About</a> · <a href="https://tabutility.com/privacy-policy/" style="color:#94a3b8;text-decoration:none">Privacy</a> · <a href="https://tabutility.com/contact/" style="color:#94a3b8;text-decoration:none">Contact</a></div>
 <div style="margin-top:6px;color:#64748b">© 2026 Tabutility</div>
-</footer>
+
+  <section id="seo-content" style="background:#1a1a2e;color:#e2e8f0;padding:60px 20px;margin-top:40px;border-top:1px solid #2d3748;">
+    <div style="max-width:860px;margin:0 auto;font-family:system-ui,-apple-system,sans-serif;line-height:1.7;">
+      <h2 style="font-size:2rem;font-weight:700;color:#f1f5f9;margin-bottom:24px;">How to Use the URL Encoder / Decoder</h2>
+      <p style="margin-bottom:16px;color:#cbd5e1;">The URL Encoder/Decoder converts special characters in URLs to their percent-encoded format (e.g. spaces become %20, & becomes %26) and decodes them back to human-readable text. It's an essential tool for web developers, API integrators, and anyone working with query strings.</p>
+      <p style="margin-bottom:16px;color:#cbd5e1;">Paste any URL or query string into the encoder to get a properly encoded version safe for use in HTTP requests and web forms. Use the decoder to convert percent-encoded URLs back to readable text for debugging or analysis. The tool handles full URLs, individual components, and raw text.</p>
+      <p style="margin-bottom:16px;color:#cbd5e1;">A key nuance is the difference between encoding a full URL and encoding a URL component. When encoding a full URL, slashes, colons, and question marks should remain unencoded. When encoding just a query parameter value, all special characters including & = + and ? should be encoded. Our tool offers both modes.</p>
+
+      <div style="background:#0f172a;border:1px solid #334155;border-radius:12px;padding:28px;margin:32px 0;">
+        <h3 style="font-size:1.2rem;font-weight:600;color:#f1f5f9;margin-bottom:16px;">📊 Worked Example</h3>
+        <p style="color:#94a3b8;margin:0 0 12px;">Encoding a URL with special characters:</p>
+        <ul style="list-style:none;padding:0;margin:0;color:#cbd5e1;">
+          <li style="padding:6px 0;border-bottom:1px solid #1e293b;">Input: <strong style="color:#f1f5f9;">https://example.com/search?q=hello world&lang=en</strong></li>
+          <li style="padding:6px 0;border-bottom:1px solid #1e293b;">Encoded: <strong style="color:#34d399;">https://example.com/search?q=hello%20world&lang=en</strong></li>
+          <li style="padding:6px 0;border-bottom:1px solid #1e293b;">Input: <strong style="color:#f1f5f9;">price=£10.50 & discount=10%</strong></li>
+          <li style="padding:6px 0;">Encoded: <strong style="color:#34d399;">price%3D%C2%A310.50%20%26%20discount%3D10%25</strong></li>
+        </ul>
+      </div>
+
+      <h3 style="font-size:1.4rem;font-weight:600;color:#f1f5f9;margin:32px 0 16px;">Common Use Cases</h3>
+      <ul style="list-style:none;padding:0;margin:0 0 32px;">
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Encoding query string parameters for safe use in HTTP GET requests</li>
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Decoding percent-encoded URLs from server logs or analytics tools</li>
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Building API requests with special characters in parameters</li>
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Debugging malformed URLs in web applications</li>
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Encoding user-submitted data before appending to URLs</li>
+        <li style="padding:8px 0;border-bottom:1px solid #1e293b;color:#cbd5e1;">✅ Converting Unicode characters to percent-encoded format for compatibility</li>
+      </ul>
+
+      <h3 style="font-size:1.4rem;font-weight:600;color:#f1f5f9;margin:32px 0 24px;">Frequently Asked Questions</h3>
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem;font-weight:600;color:#f1f5f9;margin-bottom:8px;">What is URL encoding?</h4>
+        <p style="color:#cbd5e1;margin:0;">URL encoding (percent encoding) converts characters that aren't safe in URLs to a percent sign followed by their hexadecimal ASCII code. For example, a space becomes %20, the & symbol becomes %26. This ensures URLs are transmitted safely across all systems and protocols.</p>
+      </div>
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem;font-weight:600;color:#f1f5f9;margin-bottom:8px;">Which characters need to be URL encoded?</h4>
+        <p style="color:#cbd5e1;margin:0;">Characters outside the URL-safe set must be encoded: spaces, non-ASCII characters (like £, é, 中), and reserved characters when used in data contexts (& = + ? # [ ] @ ! $ , ; : / @). Letters, digits, hyphens, underscores, periods, and tildes are always safe.</p>
+      </div>
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem;font-weight:600;color:#f1f5f9;margin-bottom:8px;">What is the difference between encodeURI and encodeURIComponent?</h4>
+        <p style="color:#cbd5e1;margin:0;">In JavaScript, encodeURI() encodes a complete URL and leaves reserved characters like / : ? & = intact. encodeURIComponent() encodes everything including reserved characters and is used for individual query parameter values. Our tool lets you choose the appropriate mode.</p>
+      </div>
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem;font-weight:600;color:#f1f5f9;margin-bottom:8px;">Why does a space sometimes appear as + instead of %20?</h4>
+        <p style="color:#cbd5e1;margin:0;">In HTML form submissions (application/x-www-form-urlencoded), spaces are encoded as + signs rather than %20. In modern URLs, %20 is the technically correct encoding. Some older systems and APIs use + for spaces, so always check which format your target system expects.</p>
+      </div>
+      <div style="margin-bottom:24px;">
+        <h4 style="font-size:1rem;font-weight:600;color:#f1f5f9;margin-bottom:8px;">What is the maximum URL length?</h4>
+        <p style="color:#cbd5e1;margin:0;">There's no official limit in the HTTP specification, but browsers and servers impose practical limits. Chrome supports up to 2MB URLs; most servers have limits of 2,048 to 8,192 characters. For very long query strings, consider using a POST request with the data in the body instead.</p>
+      </div>
+    </div>
+  </section>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is URL encoding?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "URL encoding (percent encoding) converts characters that aren't safe in URLs to a percent sign followed by their hexadecimal ASCII code. For example, a space becomes %20, the & symbol becomes %26. This ensures URLs are transmitted safely across all systems and protocols."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which characters need to be URL encoded?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Characters outside the URL-safe set must be encoded: spaces, non-ASCII characters (like £, é, 中), and reserved characters when used in data contexts (& = + ? # [ ] @ ! $ , ; : / @). Letters, digits, hyphens, underscores, periods, and tildes are always safe."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between encodeURI and encodeURIComponent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In JavaScript, encodeURI() encodes a complete URL and leaves reserved characters like / : ? & = intact. encodeURIComponent() encodes everything including reserved characters and is used for individual query parameter values. Our tool lets you choose the appropriate mode."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does a space sometimes appear as + instead of %20?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In HTML form submissions (application/x-www-form-urlencoded), spaces are encoded as + signs rather than %20. In modern URLs, %20 is the technically correct encoding. Some older systems and APIs use + for spaces, so always check which format your target system expects."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the maximum URL length?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There's no official limit in the HTTP specification, but browsers and servers impose practical limits. Chrome supports up to 2MB URLs; most servers have limits of 2,048 to 8,192 characters. For very long query strings, consider using a POST request with the data in the body instead."
+      }
+    }
+  ]
+}
+  </script>
+  </footer>
 </body>
 </html>
